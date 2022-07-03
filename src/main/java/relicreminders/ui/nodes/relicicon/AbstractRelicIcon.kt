@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.math.Interpolation
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon
+import com.megacrit.cardcrawl.helpers.FontHelper
 import com.megacrit.cardcrawl.relics.AbstractRelic
 import relicreminders.ui.Vector2
 import relicreminders.ui.nodes.TextureRect
@@ -64,6 +65,16 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): Tex
         // Render the flash if it's ongoing.
         if (flashTimer > 0f) {
             renderFlash(sb)
+        }
+
+        if (playerRelic.counter > -1) {
+            // Render the counter
+            val bottomLeftCorner = shape.boundingBox.position
+            val boundingBoxSize = shape.boundingBox.size
+            FontHelper.renderFontLeftTopAligned(sb, FontHelper.topPanelInfoFont, playerRelic.counter.toString(),
+                bottomLeftCorner.x + boundingBoxSize.x * 0.6f,
+                bottomLeftCorner.y + boundingBoxSize.y * 0.3f, Color.WHITE
+            )
         }
     }
 
