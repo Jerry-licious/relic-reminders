@@ -12,8 +12,6 @@ class HoveringKiteIcon: AbstractRelicIcon(HoveringKite()) {
         loadLocalisation("relic_reminders:HoveringKite")
     }
 
-    override fun display(): Boolean = AbstractDungeon.player.hasRelic(HoveringKite.ID)
-
     override fun update() {
         tips.clear()
         if (playerRelic.getPrivate("triggeredThisTurn")) {

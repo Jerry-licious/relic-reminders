@@ -19,7 +19,7 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic): TextureRect(relic.im
     val flashColour = Color(1f, 1f, 1f, 0f)
 
     // Returns true if this icon should be displayed in the relic icon list.
-    abstract fun display(): Boolean
+    open fun display(): Boolean = AbstractDungeon.player.hasRelic(relic.relicId)
 
     fun renderFlash(sb: SpriteBatch) {
         val interpolation = Interpolation.exp10In.apply(0.0f, 4.0f, flashTimer / 2.0f)
