@@ -2,7 +2,7 @@
   "relic_reminders:HoveringKite": {
     "TEXT": [
       "Hovering Kite",
-      "The next time you discard a card this turn, gain [E] .",
+      "The first time you discard a card this turn, gain [E] .",
       "You have already gained energy from this relic this turn."
     ]
   }
