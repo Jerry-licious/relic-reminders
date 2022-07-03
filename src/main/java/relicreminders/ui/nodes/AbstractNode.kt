@@ -35,8 +35,17 @@ abstract class AbstractNode(var shape: AbstractShape): UIElement {
 
         // Render the tips if the node is being hovered.
         if (hitbox.hovered && tips.isNotEmpty()) {
+            val boxWidth = 320f * Settings.scale
+            var xPosition = InputHelper.mX.toFloat() + 48f * Settings.scale
+
+            // If the tip will overflow the screen
+            if (xPosition + boxWidth > Settings.WIDTH) {
+                // Shift it left to prevent that.
+                xPosition -= boxWidth + 60f * Settings.scale
+            }
+
             // Render to the right by a bit so the tip doesn't get covered by the cursor.
-            TipHelper.queuePowerTips(InputHelper.mX.toFloat() + 48f * Settings.scale, InputHelper.mY.toFloat(), tips)
+            TipHelper.queuePowerTips(xPosition, InputHelper.mY.toFloat(), tips)
             TipHelper.render(sb)
         }
     }
