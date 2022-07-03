@@ -5,5 +5,42 @@
       "The first time you discard a card this turn, gain [E] .",
       "You have already gained energy from this relic this turn."
     ]
+  },
+  "relic_reminders:ArtOfWar": {
+    "TEXT": [
+      "Art of War",
+      "If you do not play any attacks this turn, gain [E] next turn.",
+      "You have played attacks this turn."
+    ]
+  },
+  "relic_reminders:HappyFlower": {
+    "TEXT": [
+      "Happy Flower",
+      "You have gained energy from this relic this turn.",
+      "In two turns, gain [E] .",
+      "Next turn, gain [E] ."
+    ]
+  },
+  "relic_reminders:Nunchaku": {
+    "TEXT": [
+      "Nunchaku",
+      "The next time you play an attack, gain [E] .",
+      "After you play #b$amount$ attacks, gain [E] ."
+    ]
+  },
+  "relic_reminders:Sundial": {
+    "TEXT": [
+      "Sundial",
+      "The next time you shuffle your draw pile #b3 times, gain [E] [E] .",
+      "The next time you shuffle your draw pile #b2 times, gain [E] [E] .",
+      "The next time you shuffle your draw pile, gain [E] [E] ."
+    ]
+  },
+  "relic_reminders:Pocketwatch": {
+    "TEXT": [
+      "Pocketwatch",
+      "If you play #b3 or fewer cards this turn, draw #b3 cards next turn.",
+      "You have played more than #b3 cards this turn."
+    ]
   }
 }

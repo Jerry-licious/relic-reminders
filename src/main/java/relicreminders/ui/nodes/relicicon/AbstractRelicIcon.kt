@@ -44,7 +44,11 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic): TextureRect(relic.im
     }
 
     fun flash() {
-        flashTimer = 2f
+        // Only flash if the icon is actually being updated and displayed.
+        // This prevents sudden flashing when the icon enters the icon list.
+        if (display()) {
+            flashTimer = 2f
+        }
     }
 
     override fun update() {
