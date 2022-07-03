@@ -1,11 +1,11 @@
-package relicreminders.ui.nodes.relicicon
+package relicreminders.ui.nodes.relicicon.energy
 
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon
 import com.megacrit.cardcrawl.helpers.PowerTip
 import com.megacrit.cardcrawl.relics.HoveringKite
 import relicreminders.ui.getPrivate
+import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 
-class HoveringKiteIcon: AbstractRelicIcon(HoveringKite()) {
+class HoveringKiteIcon: AbstractRelicIcon(HoveringKite(), 80f) {
     var triggeredThisTurn = false
 
     init {

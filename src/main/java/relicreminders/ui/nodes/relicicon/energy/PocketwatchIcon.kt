@@ -1,12 +1,13 @@
-package relicreminders.ui.nodes.relicicon
+package relicreminders.ui.nodes.relicicon.energy
 
 import basemod.BaseMod
 import basemod.interfaces.OnPlayerTurnStartSubscriber
 import com.megacrit.cardcrawl.helpers.PowerTip
 import com.megacrit.cardcrawl.relics.Pocketwatch
 import relicreminders.ui.getPrivate
+import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 
-class PocketwatchIcon: AbstractRelicIcon(Pocketwatch()), OnPlayerTurnStartSubscriber {
+class PocketwatchIcon: AbstractRelicIcon(Pocketwatch(), 80f), OnPlayerTurnStartSubscriber {
     init {
         loadLocalisation("relic_reminders:Pocketwatch")
 

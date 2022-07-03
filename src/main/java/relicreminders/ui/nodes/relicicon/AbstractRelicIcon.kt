@@ -12,9 +12,9 @@ import relicreminders.ui.relicCrop
 import relicreminders.ui.shape.Rectangle
 
 
-abstract class AbstractRelicIcon(val relic: AbstractRelic): TextureRect(relic.img.relicCrop,
+abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): TextureRect(relic.img.relicCrop,
     // The position of the rectangle doesn't matter since it's going to be updated by its container anyways.
-    Rectangle(Vector2(80f, 80f).scaled())) {
+    Rectangle(Vector2(iconSize, iconSize).scaled())) {
     var flashTimer: Float = 0f
     val flashColour = Color(1f, 1f, 1f, 0f)
 

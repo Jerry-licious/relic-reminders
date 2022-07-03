@@ -1,9 +1,10 @@
-package relicreminders.ui.nodes.relicicon
+package relicreminders.ui.nodes.relicicon.energy
 
 import com.megacrit.cardcrawl.helpers.PowerTip
 import com.megacrit.cardcrawl.relics.Nunchaku
+import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 
-class NunchakuIcon: AbstractRelicIcon(Nunchaku()) {
+class NunchakuIcon: AbstractRelicIcon(Nunchaku(), 80f) {
     init {
         loadLocalisation("relic_reminders:Nunchaku")
     }

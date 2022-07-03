@@ -1,9 +1,10 @@
-package relicreminders.ui.nodes.relicicon
+package relicreminders.ui.nodes.relicicon.energy
 
 import com.megacrit.cardcrawl.helpers.PowerTip
 import com.megacrit.cardcrawl.relics.Sundial
+import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 
-class SundialIcon: AbstractRelicIcon(Sundial()) {
+class SundialIcon: AbstractRelicIcon(Sundial(), 80f) {
     init {
         loadLocalisation("relic_reminders:Sundial")
     }

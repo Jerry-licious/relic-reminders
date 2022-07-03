@@ -1,11 +1,12 @@
-package relicreminders.ui.nodes.relicicon
+package relicreminders.ui.nodes.relicicon.energy
 
 import basemod.BaseMod
 import basemod.interfaces.OnPlayerTurnStartSubscriber
 import com.megacrit.cardcrawl.helpers.PowerTip
 import com.megacrit.cardcrawl.relics.HappyFlower
+import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 
-class HappyFlowerIcon: AbstractRelicIcon(HappyFlower()), OnPlayerTurnStartSubscriber {
+class HappyFlowerIcon: AbstractRelicIcon(HappyFlower(), 80f), OnPlayerTurnStartSubscriber {
     init {
         loadLocalisation("relic_reminders:HappyFlower")
 

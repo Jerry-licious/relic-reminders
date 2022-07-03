@@ -1,13 +1,13 @@
-package relicreminders.ui.nodes.relicicon
+package relicreminders.ui.nodes.relicicon.energy
 
-import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon
 import relicreminders.ui.Vector2
 import relicreminders.ui.hitbox
 import relicreminders.ui.nodes.Direction
 import relicreminders.ui.nodes.NodeContainer
+import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 
-class RelicIconList(val icons: ArrayList<AbstractRelicIcon> = arrayListOf()):
+class EnergyRelicIconList(val icons: ArrayList<AbstractRelicIcon> = arrayListOf()):
     NodeContainer(arrayListOf(), Vector2.ZERO, Direction.UP) {
     init {
         // Ice Cream has the simplest effect and is always active, put it closest to the energy bar.

@@ -1,12 +1,13 @@
-package relicreminders.ui.nodes.relicicon
+package relicreminders.ui.nodes.relicicon.energy
 
 import basemod.BaseMod
 import basemod.interfaces.OnPlayerTurnStartSubscriber
 import com.megacrit.cardcrawl.helpers.PowerTip
 import com.megacrit.cardcrawl.relics.ArtOfWar
 import relicreminders.ui.getPrivate
+import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 
-class ArtOfWarIcon: AbstractRelicIcon(ArtOfWar()), OnPlayerTurnStartSubscriber {
+class ArtOfWarIcon: AbstractRelicIcon(ArtOfWar(), 80f), OnPlayerTurnStartSubscriber {
     init {
         loadLocalisation("relic_reminders:ArtOfWar")
 
