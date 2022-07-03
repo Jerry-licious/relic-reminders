@@ -32,3 +32,9 @@ fun<T> Any.getPrivate(fieldName: String): T {
     field.isAccessible = true
     return field.get(this) as T
 }
+
+fun<T, U> Any.getPrivateFromClass(fieldName: String, clazz: Class<T>): U {
+    val field = clazz.getDeclaredField(fieldName)
+    field.isAccessible = true
+    return field.get(this) as U
+}
