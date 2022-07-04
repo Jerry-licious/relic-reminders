@@ -6,7 +6,8 @@ import relicreminders.ui.shape.Rectangle
 
 open class NodeContainer(val children: ArrayList<AbstractNode>,
                     // The position of the nodes are anchored by the designated centre position of the first node.
-                         var firstNodeCentre: Vector2, val extendDirection: Direction):
+                         var firstNodeCentre: Vector2, val extendDirection: Direction,
+                         val gap: Float = 0f):
     AbstractNode(Rectangle(Vector2.ZERO, Vector2.ZERO)) {
     override fun update() {
         updateChildrenPosition()
@@ -31,13 +32,15 @@ open class NodeContainer(val children: ArrayList<AbstractNode>,
                 if (extendDirection.isVertical) {
                     var stackedCentreY = firstNodeCentre.y
                     for (i in 1 until children.size) {
-                        stackedCentreY += (children[i - 1].shape.boundingBox.size.y + children[i].shape.boundingBox.size.y) / 2
+                        stackedCentreY += (children[i - 1].shape.boundingBox.size.y +
+                                children[i].shape.boundingBox.size.y + gap) / 2 * extendDirection.axisMultiplier
                         children[i].moveCentreTo(Vector2(firstNodeCentre.x, stackedCentreY))
                     }
                 } else {
                     var stackedCentreX = firstNodeCentre.x
                     for (i in 1 until children.size) {
-                        stackedCentreX += (children[i - 1].shape.boundingBox.size.x + children[i].shape.boundingBox.size.x) / 2
+                        stackedCentreX += (children[i - 1].shape.boundingBox.size.x +
+                                children[i].shape.boundingBox.size.x + gap) / 2 * extendDirection.axisMultiplier
                         children[i].moveCentreTo(Vector2(stackedCentreX, firstNodeCentre.y))
                     }
                 }

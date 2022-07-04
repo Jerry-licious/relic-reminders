@@ -7,7 +7,7 @@ import relicreminders.ui.nodes.Direction
 import relicreminders.ui.nodes.NodeContainer
 
 class DialogRelicIconList(val dialogOption: LargeDialogOptionButton):
-    NodeContainer(arrayListOf(), Vector2.ZERO, Direction.LEFT) {
+    NodeContainer(arrayListOf(), Vector2.ZERO, Direction.RIGHT) {
     val icons: ArrayList<DialogRelicIcon> = arrayListOf()
 
     init {
