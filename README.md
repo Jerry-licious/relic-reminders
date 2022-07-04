@@ -13,5 +13,12 @@
 ### By the side of Event Option Buttons
 
 - Omamori icon that indicates that you can block a curse.
-- Ceramic fish icon that shows that you can get gold from adding cards to your deck.
+- Ceramic Fish icon that shows that you can get gold from adding cards to your deck.
 - Darkstone Periapt icon that indicates that you can gain Max HP from obtaining curses.
+
+### To the right of the player's HP bar
+
+- Mark of the Bloom icon that reminds you that you can't heal.
+- Burning Blood icon that reminds you that you will heal.
+- Meat on the Bone icon that shows the healing threshold and whether it will heal you.
+- Lizard Tail icon that shows the healing amount.

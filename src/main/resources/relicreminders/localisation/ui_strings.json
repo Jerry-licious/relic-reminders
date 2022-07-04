@@ -62,5 +62,18 @@
       "Darkstone Periapt",
       "Gain #b6 Max HP when you add a #rCurse to your deck."
     ]
+  },
+  "relic_reminders:MeatOnTheBone": {
+    "TEXT": [
+      "Meat on the Bone",
+      "At the end of the combat, heal #b12 HP.",
+      "If you are at or below #b$amount$ HP, heal #b12 HP at the end of the combat."
+    ]
+  },
+  "relic_reminders:LizardTail": {
+    "TEXT": [
+      "Lizard Tail",
+      "The next time you would die, heal to #b$amount$ HP instead."
+    ]
   }
 }

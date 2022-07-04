@@ -16,6 +16,8 @@ import relicreminders.ui.shape.Rectangle
 abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): TextureRect(relic.img.relicCrop,
     // The position of the rectangle doesn't matter since it's going to be updated by its container anyways.
     Rectangle(Vector2(iconSize, iconSize).scaled())) {
+    val outlineTexture = relic.outlineImg.relicCrop
+
     var flashTimer: Float = 0f
     val flashColour = Color(1f, 1f, 1f, 0f)
 
@@ -60,6 +62,13 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): Tex
     }
 
     override fun render(sb: SpriteBatch) {
+
+        // Draw the outline
+        sb.color = Color(0f, 0f, 0f, 0.5f)
+        val boundingBox = shape.boundingBox
+        sb.draw(outlineTexture, boundingBox.position.x, boundingBox.position.y,
+            boundingBox.size.x, boundingBox.size.y)
+
         super.render(sb)
 
         // Render the flash if it's ongoing.
@@ -69,13 +78,18 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): Tex
 
         if (playerRelic.counter > -1) {
             // Render the counter
-            val bottomLeftCorner = shape.boundingBox.position
-            val boundingBoxSize = shape.boundingBox.size
-            FontHelper.renderFontLeftTopAligned(sb, FontHelper.topPanelInfoFont, playerRelic.counter.toString(),
-                bottomLeftCorner.x + boundingBoxSize.x * 0.6f,
-                bottomLeftCorner.y + boundingBoxSize.y * 0.3f, Color.WHITE
-            )
+            renderCounter(sb, playerRelic.counter)
         }
+    }
+
+    fun renderCounter(sb: SpriteBatch, number: Int) {
+        // Render the counter
+        val bottomLeftCorner = shape.boundingBox.position
+        val boundingBoxSize = shape.boundingBox.size
+        FontHelper.renderFontLeftTopAligned(sb, FontHelper.topPanelInfoFont, number.toString(),
+            bottomLeftCorner.x + boundingBoxSize.x * 0.75f,
+            bottomLeftCorner.y + boundingBoxSize.y * 0.3f, Color.WHITE
+        )
     }
 
     // Helper functions for obtaining the relic.
