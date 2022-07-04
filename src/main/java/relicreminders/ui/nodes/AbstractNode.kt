@@ -46,7 +46,6 @@ abstract class AbstractNode(var shape: AbstractShape): UIElement {
 
             // Render to the right by a bit so the tip doesn't get covered by the cursor.
             TipHelper.queuePowerTips(xPosition, InputHelper.mY.toFloat(), tips)
-            TipHelper.render(sb)
         }
     }
 
