@@ -3,13 +3,9 @@ package relicreminders.ui.nodes.relicicon.dialogoption
 import com.megacrit.cardcrawl.core.Settings
 import com.megacrit.cardcrawl.ui.buttons.LargeDialogOptionButton
 import relicreminders.ui.Vector2
-import relicreminders.ui.nodes.Direction
-import relicreminders.ui.nodes.NodeContainer
+import relicreminders.ui.nodes.relicicon.AbstractRelicIconList
 
-class DialogRelicIconList(val dialogOption: LargeDialogOptionButton):
-    NodeContainer(arrayListOf(), Vector2.ZERO, Direction.RIGHT) {
-    val icons: ArrayList<DialogRelicIcon> = arrayListOf()
-
+class DialogRelicIconList(val dialogOption: LargeDialogOptionButton): AbstractRelicIconList() {
     init {
         // Ordered from least significant to most significant (in reverse because the list expands to the left).
         icons.add(OmamoriRelicIcon(dialogOption))

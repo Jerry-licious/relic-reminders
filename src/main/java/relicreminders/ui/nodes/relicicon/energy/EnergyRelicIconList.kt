@@ -4,11 +4,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon
 import relicreminders.ui.Vector2
 import relicreminders.ui.hitbox
 import relicreminders.ui.nodes.Direction
-import relicreminders.ui.nodes.NodeContainer
-import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
+import relicreminders.ui.nodes.relicicon.AbstractRelicIconList
 
-class EnergyRelicIconList(val icons: ArrayList<AbstractRelicIcon> = arrayListOf()):
-    NodeContainer(arrayListOf(), Vector2.ZERO, Direction.UP) {
+class EnergyRelicIconList(): AbstractRelicIconList(direction = Direction.UP) {
     init {
         // Ice Cream has the simplest effect and is always active, put it closest to the energy bar.
         icons.add(IceCreamIcon())
@@ -38,9 +36,6 @@ class EnergyRelicIconList(val icons: ArrayList<AbstractRelicIcon> = arrayListOf(
         val energyPanelHitbox = AbstractDungeon.overlayMenu.energyPanel.hitbox
         // Anchor the icons above the energy panel.
         firstNodeCentre = Vector2(energyPanelHitbox.cX, energyPanelHitbox.cY + energyPanelHitbox.height)
-
-        children.clear()
-        children.addAll(icons.filter { it.display() })
 
         super.update()
     }
