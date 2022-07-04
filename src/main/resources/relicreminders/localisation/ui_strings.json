@@ -75,5 +75,11 @@
       "Lizard Tail",
       "The next time you would die, heal to #b$amount$ HP instead."
     ]
+  },
+  "relic_reminders:Sozu": {
+    "TEXT": [
+      "Sozu",
+      "You cannot obtain potions, are you sure you want to discard this potion?"
+    ]
   }
 }

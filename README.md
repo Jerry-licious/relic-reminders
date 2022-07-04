@@ -22,3 +22,9 @@
 - Burning Blood icon that reminds you that you will heal.
 - Meat on the Bone icon that shows the healing threshold and whether it will heal you.
 - Lizard Tail icon that shows the healing amount.
+
+### On potion use menu and by the side of potions
+
+- Toy Ornithopter icon that reminds you that you will heal from using potions.
+- Sozu icon to remind you to not swap out potions in vain.
+- White Beast Statue to remind you that you will get a potion at the end of each fight.
