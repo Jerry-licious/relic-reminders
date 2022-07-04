@@ -22,7 +22,7 @@ class HealthBarRelicIconList: AbstractRelicIconList(gap = 15f * Settings.scale) 
     override fun update() {
         val healthBarHitbox = AbstractDungeon.player.healthHb
         // Anchor the icons to the right of the player's health hitbox.
-        firstNodeCentre = Vector2(healthBarHitbox.x + healthBarHitbox.width, healthBarHitbox.y + 60f * Settings.scale)
+        firstNodeCentre = Vector2(healthBarHitbox.x + healthBarHitbox.width, healthBarHitbox.y + 55f * Settings.scale)
 
         super.update()
     }
