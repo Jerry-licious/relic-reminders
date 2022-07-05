@@ -2,7 +2,7 @@
   "modid": "relic-reminders",
   "name": "Relic Reminders",
   "author_list": ["Jerry"],
-  "description": "",
+  "description": "Get reminded of all the relics you have that you tend to forget! Use the config menu to change what types of reminders to display.",
   "version": "0.0.1",
   "sts_version": "12-22-2020",
   "mts_version": "3.19.0",
