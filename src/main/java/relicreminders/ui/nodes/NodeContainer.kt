@@ -21,7 +21,7 @@ open class NodeContainer(val children: ArrayList<AbstractNode>,
         super.update()
     }
 
-    private fun updateChildrenPosition() {
+    open fun updateChildrenPosition() {
         if (children.isNotEmpty()) {
             // Line all the nodes up:
             // Anchor the first node at the designated position.
@@ -46,17 +46,21 @@ open class NodeContainer(val children: ArrayList<AbstractNode>,
                 }
             }
 
-            // Update the shape after all the nodes have been set.
-            val newBoundingBoxPosition = Vector2(
-                children.minOf { it.shape.boundingBox.position.x },
-                children.minOf { it.shape.boundingBox.position.y }
-            )
-            val boundingBoxCorner = Vector2(
-                children.maxOf { it.shape.boundingBox.position.x },
-                children.maxOf { it.shape.boundingBox.position.y }
-            )
-            updateShape(Rectangle(boundingBoxCorner - newBoundingBoxPosition, newBoundingBoxPosition))
+            refitHitbox()
         }
+    }
+
+    fun refitHitbox() {
+        // Update the shape after all the nodes have been set.
+        val newBoundingBoxPosition = Vector2(
+            children.minOf { it.shape.boundingBox.position.x },
+            children.minOf { it.shape.boundingBox.position.y }
+        )
+        val boundingBoxCorner = Vector2(
+            children.maxOf { it.shape.boundingBox.position.x },
+            children.maxOf { it.shape.boundingBox.position.y }
+        )
+        updateShape(Rectangle(boundingBoxCorner - newBoundingBoxPosition, newBoundingBoxPosition))
     }
 
     override fun moveCentreTo(newCentre: Vector2) {
