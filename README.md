@@ -28,3 +28,9 @@
 - Toy Ornithopter icon that reminds you that you will heal from using potions.
 - Sozu icon to remind you to not swap out potions in vain.
 - White Beast Statue to remind you that you will get a potion at the end of each fight.
+
+### End Turn Button
+
+- The end turn button is now blocked until all actions finish resolving.
+- The following relics will block the end turn button when they trigger: Unceasing Top, Gremlin Horn.
+  - These relics will show their icon on the end turn button when they are blocking you from ending your turn.
