@@ -1,6 +1,10 @@
 package relicreminders.ui
 
 import com.megacrit.cardcrawl.core.Settings
+import kotlin.math.atan2
+import kotlin.math.cos
+import kotlin.math.sin
+import kotlin.math.sqrt
 
 class Vector2(val x: Float, val y: Float) {
     operator fun plus(other: Vector2) = Vector2(x + other.x, y + other.y)
@@ -10,6 +14,17 @@ class Vector2(val x: Float, val y: Float) {
 
     // Scales the current vector by Settings.scale
     fun scaled() = this.times(Settings.scale)
+
+    val angle: Float
+        get() = atan2(y.toDouble(), x.toDouble()).toFloat()
+
+    val length: Float
+        get() = sqrt(x * x + y * y)
+
+    fun rotated(angle: Float): Vector2 {
+        val summedAngle = angle + this.angle
+        return Vector2(cos(summedAngle), sin(summedAngle)) * length
+    }
 
     companion object {
         @JvmField
