@@ -12,7 +12,7 @@ class MeatOnTheBoneIcon: AbstractRelicIcon(MeatOnTheBone(), 45f) {
         loadLocalisation("relic_reminders:MeatOnTheBone")
     }
 
-    override fun display(): Boolean = super.display() && !AbstractDungeon.player.hasRelic(MarkOfTheBloom.ID)
+    override fun display(): Boolean = super.display() && canHeal
 
     val threshold: Int
         get() = (AbstractDungeon.player.maxHealth / 2f).toInt()

@@ -12,7 +12,7 @@ class WhiteBeastStatueIcon: AbstractRelicIcon(WhiteBeast(), 50f) {
         tips.add(PowerTip(relic.name, relic.description))
     }
 
-    override fun display(): Boolean = super.display() && !AbstractDungeon.player.hasRelic(Sozu.ID) &&
+    override fun display(): Boolean = super.display() && canObtainPotion &&
             // Only show up in combat.
             AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT
 }

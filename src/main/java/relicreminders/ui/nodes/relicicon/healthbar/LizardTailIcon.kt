@@ -12,7 +12,7 @@ class LizardTailIcon: AbstractRelicIcon(LizardTail(), 45f) {
         loadLocalisation("relic_reminders:LizardTail")
     }
 
-    override fun display(): Boolean = super.display() && !AbstractDungeon.player.hasRelic(MarkOfTheBloom.ID) && !playerRelic.usedUp
+    override fun display(): Boolean = super.display() && canHeal && !playerRelic.usedUp
 
     override fun render(sb: SpriteBatch) {
         super.render(sb)

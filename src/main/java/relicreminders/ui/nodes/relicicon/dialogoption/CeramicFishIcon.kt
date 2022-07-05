@@ -16,7 +16,7 @@ class CeramicFishIcon(button: LargeDialogOptionButton): DialogRelicIcon(CeramicF
     override fun display(): Boolean {
         val cardToPreview = dialogOption.getPrivate<AbstractCard?>("cardToPreview")
 
-        return super.display() && cardToPreview != null &&
+        return super.display() && cardToPreview != null && canGainGold &&
                 // Triggers if the card isn't a curse
                 (cardToPreview.type != AbstractCard.CardType.CURSE ||
                     // and if there isn't enough Omamori charges to block the curse.

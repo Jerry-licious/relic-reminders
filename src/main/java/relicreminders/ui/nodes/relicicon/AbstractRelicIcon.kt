@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.math.Interpolation
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon
 import com.megacrit.cardcrawl.helpers.FontHelper
-import com.megacrit.cardcrawl.relics.AbstractRelic
+import com.megacrit.cardcrawl.relics.*
 import relicreminders.ui.Vector2
 import relicreminders.ui.nodes.TextureRect
 import relicreminders.ui.relicCrop
@@ -95,4 +95,17 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): Tex
     // Helper functions for obtaining the relic.
     val playerRelic: AbstractRelic
         get() = AbstractDungeon.player.getRelic(relic.relicId)
+
+    val canHeal: Boolean
+        get() = !AbstractDungeon.player.hasRelic(MarkOfTheBloom.ID)
+    val canGainGold: Boolean
+        get() = !AbstractDungeon.player.hasRelic(Ectoplasm.ID)
+    val canObtainPotion: Boolean
+        get() = !AbstractDungeon.player.hasRelic(Sozu.ID)
+    val omamoriCounter: Int
+        get() {
+            return if (AbstractDungeon.player.hasRelic(Omamori.ID)) {
+                AbstractDungeon.player.getRelic(Omamori.ID).counter
+            } else { 0 }
+        }
 }

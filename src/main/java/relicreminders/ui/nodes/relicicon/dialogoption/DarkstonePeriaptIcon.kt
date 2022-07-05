@@ -17,7 +17,7 @@ class DarkstonePeriaptIcon(button: LargeDialogOptionButton): DialogRelicIcon(Dar
         val cardToPreview = dialogOption.getPrivate<AbstractCard?>("cardToPreview")
 
         // Only triggers if there's no Omamori to block the curse.
-        return super.display() && cardToPreview != null && omamoriCounter <= 0 &&
+        return super.display() && canHeal && cardToPreview != null && omamoriCounter <= 0 &&
                 cardToPreview.type == AbstractCard.CardType.CURSE
     }
 }

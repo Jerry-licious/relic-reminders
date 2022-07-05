@@ -11,5 +11,5 @@ class ToyOrnithopterIcon: AbstractRelicIcon(ToyOrnithopter(), 60f) {
         tips.add(PowerTip(relic.name, relic.description))
     }
 
-    override fun display(): Boolean = super.display() && !AbstractDungeon.player.hasRelic(MarkOfTheBloom.ID)
+    override fun display(): Boolean = super.display() && canHeal
 }
