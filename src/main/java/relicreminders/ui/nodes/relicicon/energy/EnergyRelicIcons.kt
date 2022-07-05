@@ -6,7 +6,7 @@ import relicreminders.ui.hitbox
 import relicreminders.ui.nodes.Direction
 import relicreminders.ui.nodes.relicicon.AbstractRelicIconList
 
-class EnergyRelicIconList(): AbstractRelicIconList(direction = Direction.UP) {
+class EnergyRelicIcons(): AbstractRelicIconList(direction = Direction.UP) {
     init {
         // Ice Cream has the simplest effect and is always active, put it closest to the energy bar.
         icons.add(IceCreamIcon())

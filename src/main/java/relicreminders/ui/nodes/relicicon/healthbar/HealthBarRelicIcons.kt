@@ -10,7 +10,7 @@ import relicreminders.ui.nodes.NodeContainer
 import relicreminders.ui.nodes.relicicon.AbstractRelicIcon
 import relicreminders.ui.nodes.relicicon.AbstractRelicIconList
 
-class HealthBarRelicIconList: AbstractRelicIconList(gap = 15f * Settings.scale) {
+class HealthBarRelicIcons: AbstractRelicIconList(gap = 15f * Settings.scale) {
     init {
         // In decreasing order of trigger frequency.
         icons.add(MarkOfTheBloomIcon())

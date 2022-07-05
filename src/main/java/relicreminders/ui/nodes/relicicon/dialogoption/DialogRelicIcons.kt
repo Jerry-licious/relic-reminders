@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.ui.buttons.LargeDialogOptionButton
 import relicreminders.ui.Vector2
 import relicreminders.ui.nodes.relicicon.AbstractRelicIconList
 
-class DialogRelicIconList(val dialogOption: LargeDialogOptionButton): AbstractRelicIconList() {
+class DialogRelicIcons(val dialogOption: LargeDialogOptionButton): AbstractRelicIconList() {
     init {
         // Ordered from least significant to most significant (in reverse because the list expands to the left).
         icons.add(OmamoriRelicIcon(dialogOption))
