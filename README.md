@@ -34,3 +34,7 @@
 - The end turn button is now blocked until all actions finish resolving.
 - The following relics will block the end turn button when they trigger: Unceasing Top, Gremlin Horn.
   - These relics will show their icon on the end turn button when they are blocking you from ending your turn.
+  
+### Above the Player
+
+- Orange pellets icon that tracks the types of card played this turn.
