@@ -38,3 +38,11 @@
 ### Above the Player
 
 - Orange pellets icon that tracks the types of card played this turn.
+
+### Around Map Nodes
+
+- Sling of Courage icon on elite nodes.
+- Prayer Wheel icon on monster nodes.
+- Eternal Feather icon on campfire nodes.
+- Courier, Meal Ticket, Membership Card, and Smiling Mask all show up on shop nodes.
+- Matryoshka and Nloth's Hungry Face icons on treasure nodes.
