@@ -62,9 +62,8 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): Tex
     }
 
     override fun render(sb: SpriteBatch) {
-
         // Draw the outline
-        sb.color = Color(0f, 0f, 0f, 0.5f)
+        sb.color = Color(0f, 0f, 0f, 0.5f * opacity)
         val boundingBox = shape.boundingBox
         sb.draw(outlineTexture, boundingBox.position.x, boundingBox.position.y,
             boundingBox.size.x, boundingBox.size.y)
