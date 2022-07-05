@@ -81,5 +81,23 @@
       "Sozu",
       "You cannot obtain potions, are you sure you want to discard this potion?"
     ]
+  },
+  "relic_reminders:config": {
+    "TEXT": [
+      "Show energy-related relic reminders.",
+      "Show event option-related relic reminders.",
+      "Show HP-related relic reminders.",
+      "Show potion-related relic reminders.",
+      "Block premature end turns.",
+      "Show the Orange Pellets tracker.",
+      "Show map-related relic reminders."
+    ]
+  },
+  "relic_reminders:mod": {
+    "TEXT": [
+      "Relic Reminders",
+      "Jerry",
+      "Get reminded of all the relics you have that you tend to forget! Use the config menu to change what types of reminders to display."
+    ]
   }
 }

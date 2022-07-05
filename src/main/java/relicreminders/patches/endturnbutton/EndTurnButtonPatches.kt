@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.relics.GremlinHorn
 import com.megacrit.cardcrawl.relics.UnceasingTop
 import com.megacrit.cardcrawl.ui.buttons.EndTurnButton
 import com.megacrit.cardcrawl.vfx.RelicAboveCreatureEffect
+import relicreminders.RelicRemindersMod
 import relicreminders.ui.getPrivate
 
 object EndTurnButtonPatches {
@@ -40,7 +41,7 @@ object EndTurnButtonPatches {
                 // Only consider blocking the end turn button if it's the player pressing the button.
                 stackTrace[3].className == "com.megacrit.cardcrawl.ui.buttons.EndTurnButton") {
                 // Block the end turn if the player hasn't waited long enough.
-                if (!allowEndTurn) {
+                if (!allowEndTurn && RelicRemindersMod.config.blockEndTurn) {
                     val buttonHitbox = endTurnButton.getPrivate<Hitbox>("hb")
                     if (unceasingTopTimer > 0f) {
                         AbstractDungeon.effectList.add(RelicAboveCreatureEffect(buttonHitbox.cX,
@@ -80,7 +81,7 @@ object EndTurnButtonPatches {
         @JvmStatic
         @SpireInsertPatch(rloc = 52)
         fun changeColour(endTurnButton: EndTurnButton, sb: SpriteBatch) {
-            if (!allowEndTurn) {
+            if (!allowEndTurn && RelicRemindersMod.config.blockEndTurn) {
                 sb.color = Settings.RED_TEXT_COLOR
             }
         }
