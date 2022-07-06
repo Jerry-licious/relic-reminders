@@ -2,7 +2,9 @@ Get reminded of all the relics you have that you tend to forget! Never be embarr
 
 The relic reminder mod covers the functionalities of many relics, making sure that you are constantly made aware of each of them!
 
-This mod supports localisations! If you would like to submit a localisation file, please work from the [url=https://pastebin.com/HUNpsuDJ]English localisation[/url] as a template and send your file to through comments!
+This mod supports localisations! If you would like to submit a localisation file, please work from the [url=https://raw.githubusercontent.com/Jerry-licious/relic-reminders/master/src/main/resources/relicreminders/localisation/ui_strings.json]English localisation[/url] as a template and send your file to through comments!
+
+The source of this mod is available on [url=https://github.com/Jerry-licious/relic-reminders]GitHub[/url]!
 
 [h1] Features [/h1]
 
