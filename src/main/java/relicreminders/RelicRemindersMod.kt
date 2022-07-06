@@ -4,6 +4,7 @@ import basemod.BaseMod
 import basemod.interfaces.EditStringsSubscriber
 import basemod.interfaces.PostInitializeSubscriber
 import com.badlogic.gdx.graphics.Texture
+import com.evacipated.cardcrawl.modthespire.Loader
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer
 import com.megacrit.cardcrawl.core.CardCrawlGame
 import com.megacrit.cardcrawl.localization.UIStrings
@@ -38,7 +39,7 @@ class RelicRemindersMod: EditStringsSubscriber, PostInitializeSubscriber {
 
         // STSLib offers the temporary HP feature. Have the relic icons shifted right if the mod is enabled to make
         // sure it's not covered
-        if (BaseMod.hasModID("stslib")) {
+        if (Loader.isModLoaded("stslib")) {
             config.shiftHPIconsRight = true
         }
     }
