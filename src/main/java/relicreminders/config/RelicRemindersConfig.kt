@@ -35,4 +35,6 @@ class RelicRemindersConfig: SpireConfig("relic_reminders", "config", defaults) {
         get() = getBool("map")
     val orbs: Boolean
         get() = getBool("orbs")
+
+    var shiftHPIconsRight: Boolean = false
 }

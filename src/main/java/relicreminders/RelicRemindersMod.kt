@@ -35,5 +35,11 @@ class RelicRemindersMod: EditStringsSubscriber, PostInitializeSubscriber {
         // Initialise the strings after the strings are loaded.
         texts = CardCrawlGame.languagePack.getUIString("relic_reminders:mod").TEXT
         BaseMod.registerModBadge(Texture("relicreminders/badge.png"), texts[0], texts[1], texts[2], ConfigMenu())
+
+        // STSLib offers the temporary HP feature. Have the relic icons shifted right if the mod is enabled to make
+        // sure it's not covered
+        if (BaseMod.hasModID("stslib")) {
+            config.shiftHPIconsRight = true
+        }
     }
 }
