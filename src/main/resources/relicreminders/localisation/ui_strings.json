@@ -103,7 +103,8 @@
       "Show potion-related relic reminders.",
       "Block premature end turns.",
       "Show the Orange Pellets tracker.",
-      "Show map-related relic reminders."
+      "Show map-related relic reminders.",
+      "Show orb-related relic reminders."
     ]
   },
   "relic_reminders:mod": {

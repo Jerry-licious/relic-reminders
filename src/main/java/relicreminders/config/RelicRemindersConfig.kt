@@ -15,6 +15,7 @@ class RelicRemindersConfig: SpireConfig("relic_reminders", "config", defaults) {
             defaults.setProperty("endturn", "true")
             defaults.setProperty("pellets", "true")
             defaults.setProperty("map", "true")
+            defaults.setProperty("orbs", "true")
         }
     }
 
@@ -32,4 +33,6 @@ class RelicRemindersConfig: SpireConfig("relic_reminders", "config", defaults) {
         get() = getBool("pellets")
     val map: Boolean
         get() = getBool("map")
+    val orbs: Boolean
+        get() = getBool("orbs")
 }

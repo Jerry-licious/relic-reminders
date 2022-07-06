@@ -9,7 +9,7 @@ val toggleButtonSpacing = 75f
 
 class ConfigMenu: ModPanel() {
     val texts = CardCrawlGame.languagePack.getUIString("relic_reminders:config").TEXT
-    val keys = arrayOf("energy", "event", "hp", "potion", "endturn", "pellets", "map")
+    val keys = arrayOf("energy", "event", "hp", "potion", "endturn", "pellets", "map", "orbs")
 
     init {
         for (i in keys.indices) {

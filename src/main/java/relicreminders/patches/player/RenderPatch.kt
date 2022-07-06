@@ -1,4 +1,4 @@
-package relicreminders.patches.playerhealthbar
+package relicreminders.patches.player
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch
@@ -13,6 +13,9 @@ object RenderPatch {
     fun renderHealthBarIcons(player: AbstractPlayer, sb: SpriteBatch) {
         if (RelicRemindersMod.config.hp) {
             player.healthBarRelicIcons.render(sb)
+        }
+        if (RelicRemindersMod.config.orbs) {
+            player.orbRelicIcons.render(sb)
         }
     }
 }

@@ -58,6 +58,10 @@ each of them!
 - Courier, Meal Ticket, Membership Card, and Smiling Mask all show up on shop nodes.
 - Matryoshka and Nloth's Hungry Face icons on treasure nodes.
 
+### By the First Orb
+
+- Gold-Plated cables icon that shows that your next orb's passive is triggered twice.
+- Emotion Chip icon that tracks its status.
 
 # FAQ
 
