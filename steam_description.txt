@@ -73,6 +73,12 @@ The source of this mod is available on [url=https://github.com/Jerry-licious/rel
   [*] Matryoshka and Nloth's Hungry Face icons on treasure nodes.
 [/list]
 
+[h3] By the First Orb [/h3]
+
+[list]
+  [*] Gold-Plated cables icon that shows that your next orb's passive is triggered twice.
+  [*] Emotion Chip icon that tracks its status.
+[/list]
 
 [h1] FAQ [/h1]
 
