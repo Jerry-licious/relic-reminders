@@ -5,6 +5,9 @@ your life, forgetting whether you've used Hovering Kite, discarding a potion wit
 The relic reminder mod covers the functionalities of many relics, making sure that you are constantly made aware of 
 each of them!
 
+This mod supports localisations! If you would like to submit a localisation file, please work from the
+[url=https://pastebin.com/HUNpsuDJ]English localisation[/url] as a template and send your file to through comments!
+
 [h1] Features [/h1]
 
 [h3] Above the Energy Icon [\h3]
@@ -73,14 +76,14 @@ each of them!
 
 [h3] Why are there no reminders for card-play related relics, such as pen nib, letter opener, and nunchaku? Why are there no reminder for rest-related relics like dream catcher and regal pillow? [\h3]
 
-For the most part, [Minty](https://steamcommunity.com/sharedfiles/filedetails/?id=1812723899) has these cases 
+For the most part, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1812723899]Minty[/url] has these cases
 covered. I didn't want to make the mod conflict with Minty, so I avoided adding duplicate features.
 
 
 [h3] Why are there no block reminders for relics like Orichalcum? [\h3]
 
-The [Block Reminder](https://steamcommunity.com/sharedfiles/filedetails/?id=1974165911) mod does that, while also 
-including metalicise, plated armour, like water, and frost orbs.
+The [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1974165911]Block Reminder[/url] mod does that, while
+also including metalicise, plated armour, like water, and frost orbs.
 
 
 [h3] Please add options for enabling/disabling individual relic reminders. [\h3]
