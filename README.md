@@ -1,3 +1,10 @@
+Get reminded of all the relics you have that you tend to forget! 
+Never be embarrassed about ending your turn with unceasing top, walking away from a meal ticket trigger that saves 
+your life, forgetting whether you've used Hovering Kite, discarding a potion with Sozu, and much more.
+
+The relic reminder mod covers the functionalities of many relics, making sure that you are constantly made aware of 
+each of them!
+
 # Features
 
 ### Above the Energy Icon
@@ -46,3 +53,22 @@
 - Eternal Feather icon on campfire nodes.
 - Courier, Meal Ticket, Membership Card, and Smiling Mask all show up on shop nodes.
 - Matryoshka and Nloth's Hungry Face icons on treasure nodes.
+
+
+# FAQ
+
+### Why are there no reminders for card-play related relics, such as pen nib, letter opener, and nunchaku? Why are there no reminder for rest-related relics like dream catcher and regal pillow?
+
+For the most part, [Minty](https://steamcommunity.com/sharedfiles/filedetails/?id=1812723899) has these cases 
+covered. I didn't want to make the mod conflict with Minty, so I avoided adding duplicate features.
+
+
+### Why are there no block reminders for relics like Orichalcum? 
+
+The [Block Reminder](https://steamcommunity.com/sharedfiles/filedetails/?id=1974165911) mod does that, while also 
+including metalicise, plated armour, like water, and frost orbs.
+
+
+### Please add options for enabling/disabling individual relic reminders.
+
+That's a bit too much of a pain, so I won't be adding individual relic options.
