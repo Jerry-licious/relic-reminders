@@ -75,7 +75,8 @@ abstract class AbstractRelicIcon(val relic: AbstractRelic, iconSize: Float): Tex
             renderFlash(sb)
         }
 
-        if (playerRelic.counter > -1) {
+        // Safety check to prevent out-of-sync update/renders that leave the player relic null.
+        if (AbstractDungeon.player.hasRelic(relic.relicId) && playerRelic.counter > -1) {
             // Render the counter
             renderCounter(sb, playerRelic.counter)
         }
