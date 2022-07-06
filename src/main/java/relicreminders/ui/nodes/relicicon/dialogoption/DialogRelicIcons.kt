@@ -9,6 +9,7 @@ class DialogRelicIcons(val dialogOption: LargeDialogOptionButton): AbstractRelic
     init {
         // Ordered from least significant to most significant (in reverse because the list expands to the left).
         icons.add(OmamoriRelicIcon(dialogOption))
+        icons.add(DuVuDollIcon(dialogOption))
         icons.add(DarkstonePeriaptIcon(dialogOption))
         icons.add(CeramicFishIcon(dialogOption))
     }

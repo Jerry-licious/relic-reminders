@@ -22,12 +22,15 @@ each of them!
 - Omamori icon that indicates that you can block a curse.
 - Ceramic Fish icon that shows that you can get gold from adding cards to your deck.
 - Darkstone Periapt icon that indicates that you can gain Max HP from obtaining curses.
+- Du-Vu Doll icon that shows that you can gain Strength from obtaining curses.
 
 ### Player HP Bar
 
 - Mark of the Bloom icon that reminds you that you can't heal.
 - Burning Blood icon that reminds you that you will heal.
 - Meat on the Bone icon that shows the healing threshold and whether it will heal you.
+- Magic Flower icon that reminds you that you will get extra heal.
+- Red Skull icon displaying its threshold and status.
 - Lizard Tail icon that shows the healing amount.
 
 ### Potions
@@ -48,7 +51,8 @@ each of them!
 
 ### Around Map Nodes
 
-- Sling of Courage icon on elite nodes.
+- Sling of Courage and Preserved Insect icons on elite nodes.
+- Ssserpent Head icon on event nodes.
 - Prayer Wheel icon on monster nodes.
 - Eternal Feather icon on campfire nodes.
 - Courier, Meal Ticket, Membership Card, and Smiling Mask all show up on shop nodes.

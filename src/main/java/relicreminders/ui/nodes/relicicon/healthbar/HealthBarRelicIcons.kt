@@ -16,6 +16,8 @@ class HealthBarRelicIcons: AbstractRelicIconList(gap = 15f * Settings.scale) {
         icons.add(MarkOfTheBloomIcon())
         icons.add(BurningBloodIcon())
         icons.add(MeatOnTheBoneIcon())
+        icons.add(MagicFlowerIcon())
+        icons.add(RedSkullIcon())
         icons.add(LizardTailIcon())
     }
 

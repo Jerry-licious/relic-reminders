@@ -63,11 +63,24 @@
       "Gain #b6 Max HP when you add a #rCurse to your deck."
     ]
   },
+  "relic_reminders:DuVuDoll": {
+    "TEXT": [
+      "Du-Vu Doll",
+      "Start each combat with #b1 additional #yStrength."
+    ]
+  },
   "relic_reminders:MeatOnTheBone": {
     "TEXT": [
       "Meat on the Bone",
       "At the end of the combat, heal #b12 HP.",
       "If you are at or below #b$amount$ HP, heal #b12 HP at the end of the combat."
+    ]
+  },
+  "relic_reminders:RedSkull": {
+    "TEXT": [
+      "Red Skull",
+      "You have #b3 #yStrength.",
+      "You have #b3 #yStrength while being at or below #b$amount$ HP."
     ]
   },
   "relic_reminders:LizardTail": {

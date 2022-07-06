@@ -3,7 +3,9 @@ package relicreminders.ui.nodes.relicicon.mapnode
 import com.megacrit.cardcrawl.map.MapRoomNode
 import relicreminders.ui.Vector2
 import relicreminders.ui.nodes.relicicon.AbstractRelicIconList
+import relicreminders.ui.nodes.relicicon.mapnode.elite.PreservedInsectIcon
 import relicreminders.ui.nodes.relicicon.mapnode.elite.SlingOfCourageIcon
+import relicreminders.ui.nodes.relicicon.mapnode.event.SerpentHeadIcon
 import relicreminders.ui.nodes.relicicon.mapnode.monster.PrayerWheelIcon
 import relicreminders.ui.nodes.relicicon.mapnode.rest.EternalFeatherIcon
 import relicreminders.ui.nodes.relicicon.mapnode.shop.CourierIcon
@@ -17,7 +19,10 @@ val angleStartOffset = Math.PI.toFloat() / 6
 
 class MapNodeRelicIcons(val node: MapRoomNode): AbstractRelicIconList() {
     init {
+        icons.add(PreservedInsectIcon(node))
         icons.add(SlingOfCourageIcon(node))
+
+        icons.add(SerpentHeadIcon(node))
 
         icons.add(PrayerWheelIcon(node))
 
