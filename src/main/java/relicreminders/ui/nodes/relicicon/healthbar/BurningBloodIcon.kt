@@ -13,8 +13,4 @@ class BurningBloodIcon: AbstractRelicIcon(BurningBlood(), 45f) {
     }
 
     override fun display(): Boolean = super.display() && canHeal
-
-    override fun render(sb: SpriteBatch) {
-        super.render(sb)
-    }
 }
