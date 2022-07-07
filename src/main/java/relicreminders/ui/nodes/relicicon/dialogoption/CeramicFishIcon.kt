@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip
 import com.megacrit.cardcrawl.relics.CeramicFish
 import com.megacrit.cardcrawl.ui.buttons.LargeDialogOptionButton
 import relicreminders.ui.getPrivate
+import relicreminders.ui.getPrivateFromClass
 
 class CeramicFishIcon(button: LargeDialogOptionButton): DialogRelicIcon(CeramicFish(), button) {
     init {
@@ -14,7 +15,7 @@ class CeramicFishIcon(button: LargeDialogOptionButton): DialogRelicIcon(CeramicF
     }
 
     override fun display(): Boolean {
-        val cardToPreview = dialogOption.getPrivate<AbstractCard?>("cardToPreview")
+        val cardToPreview = dialogOption.previewCard
 
         return super.display() && cardToPreview != null && canGainGold &&
                 // Triggers if the card isn't a curse

@@ -12,7 +12,7 @@ class OmamoriRelicIcon(button: LargeDialogOptionButton): DialogRelicIcon(Omamori
     }
 
     override fun display(): Boolean {
-        val cardToPreview = dialogOption.getPrivate<AbstractCard?>("cardToPreview")
+        val cardToPreview = dialogOption.previewCard
 
         return super.display() && omamoriCounter > 0 &&
                 cardToPreview != null && cardToPreview.type == AbstractCard.CardType.CURSE
