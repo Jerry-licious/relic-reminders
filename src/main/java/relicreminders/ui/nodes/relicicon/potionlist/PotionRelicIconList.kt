@@ -10,10 +10,12 @@ class PotionRelicIconList: AbstractRelicIconList() {
     }
 
     override fun update() {
-        val lastPotionHitbox = AbstractDungeon.player.potions.last().hb
-        // Anchor to the right to the rightmost potion slot.
-        firstNodeCentre = Vector2(lastPotionHitbox.cX + lastPotionHitbox.width, lastPotionHitbox.cY)
+        if (AbstractDungeon.player.potions.isNotEmpty()) {
+            val lastPotionHitbox = AbstractDungeon.player.potions.last().hb
+            // Anchor to the right to the rightmost potion slot.
+            firstNodeCentre = Vector2(lastPotionHitbox.cX + lastPotionHitbox.width, lastPotionHitbox.cY)
 
-        super.update()
+            super.update()
+        }
     }
 }
